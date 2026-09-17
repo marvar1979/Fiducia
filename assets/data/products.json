@@ -1,0 +1,10 @@
+[
+  {"id":1,"name":"Rose Dew Gentle Cleanser","brand":"Fidusia Lab","category":"Limpieza","price":119,"oldPrice":139,"rating":4.9,"stock":16,"badge":"Bestseller"},
+  {"id":2,"name":"Golden Peptide Serum","brand":"Fidusia Lab","category":"Sérums","price":189,"oldPrice":null,"rating":4.8,"stock":11,"badge":"Nuevo"},
+  {"id":3,"name":"Cloud Barrier Cream","brand":"Fidusia Essentials","category":"Hidratación","price":149,"oldPrice":169,"rating":4.9,"stock":8,"badge":"-12%"},
+  {"id":4,"name":"Pink Shield SPF 50","brand":"Sol & Skin","category":"Protección solar","price":165,"oldPrice":null,"rating":4.7,"stock":22,"badge":"Top"},
+  {"id":5,"name":"Berry Lip Sleeping Mask","brand":"Velour Kiss","category":"Labios","price":69,"oldPrice":79,"rating":4.8,"stock":25,"badge":"Favorito"},
+  {"id":6,"name":"Niacinamide Balance Drops","brand":"Fidusia Lab","category":"Sérums","price":159,"oldPrice":null,"rating":4.6,"stock":13,"badge":"Glow"},
+  {"id":7,"name":"Petal Milk Toner","brand":"Fidusia Essentials","category":"Hidratación","price":129,"oldPrice":145,"rating":4.7,"stock":18,"badge":"Suave"},
+  {"id":8,"name":"Soft Melt Cleansing Balm","brand":"Pure Ritual","category":"Limpieza","price":139,"oldPrice":null,"rating":4.9,"stock":7,"badge":"Bestseller"}
+]

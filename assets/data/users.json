@@ -1,0 +1,6 @@
+[
+  {"role":"Administrador","email":"admin@fidusia.bo","password":"Admin123!"},
+  {"role":"Ventas","email":"ventas@fidusia.bo","password":"Ventas123!"},
+  {"role":"Almacén","email":"almacen@fidusia.bo","password":"Stock123!"},
+  {"role":"Cliente","email":"cliente@fidusia.bo","password":"Cliente123!"}
+]

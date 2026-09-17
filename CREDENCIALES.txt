@@ -1,0 +1,23 @@
+FIDUSIA — CREDENCIALES DEMO
+
+ADMINISTRADOR
+Correo: admin@fidusia.bo
+Contraseña: Admin123!
+Acceso: métricas generales, pedidos, visión administrativa del sistema.
+
+VENTAS
+Correo: ventas@fidusia.bo
+Contraseña: Ventas123!
+Acceso: pedidos, clientes y seguimiento comercial.
+
+ALMACÉN
+Correo: almacen@fidusia.bo
+Contraseña: Stock123!
+Acceso: inventario, stock y reposición.
+
+CLIENTE
+Correo: cliente@fidusia.bo
+Contraseña: Cliente123!
+Acceso: cuenta, favoritos y resumen de pedidos.
+
+Estas credenciales son solo para demostración front-end.

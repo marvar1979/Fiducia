@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fidusia, tienda online de skincare y cosmética con catálogo, carrito, favoritos y panel por roles.">
+  <title>Fidusia | Skincare & Beauty</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="top-strip text-center py-2 px-3">
+    <span><i class="bi bi-truck me-2"></i>Envío gratis en compras mayores a Bs. 500</span>
+    <span class="d-none d-md-inline mx-3">•</span>
+    <span class="d-none d-md-inline"><i class="bi bi-shield-check me-2"></i>Productos seleccionados con amor</span>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top fidusia-nav" aria-label="Navegación principal">
+    <div class="container py-2">
+      <a class="navbar-brand brand-mark" href="#inicio" aria-label="Fidusia inicio">
+        <span class="brand-f">F</span><span>Fidusia</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rutinas">Rutinas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 nav-actions">
+          <button class="icon-btn" id="searchFocusBtn" aria-label="Buscar"><i class="bi bi-search"></i></button>
+          <button class="icon-btn position-relative" id="wishlistBtn" aria-label="Favoritos">
+            <i class="bi bi-heart"></i><span class="mini-badge" id="wishlistCount">0</span>
+          </button>
+          <button class="icon-btn position-relative" data-bs-toggle="offcanvas" data-bs-target="#cartCanvas" aria-label="Carrito">
+            <i class="bi bi-bag"></i><span class="mini-badge" id="cartCount">0</span>
+          </button>
+          <button class="btn btn-fidusia ms-lg-1" data-bs-toggle="modal" data-bs-target="#loginModal" id="accountBtn"><i class="bi bi-person me-1"></i> Cuenta</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero-section overflow-hidden">
+      <div class="container">
+        <div class="row min-vh-75 align-items-center g-4 py-5">
+          <div class="col-lg-6 hero-copy">
+            <span class="eyebrow"><i class="bi bi-stars me-2"></i>Rituales que se sienten bien</span>
+            <h1 class="display-3 fw-semibold mt-3">Tu piel, tu ritual,<br><span>tu Fidusia.</span></h1>
+            <p class="lead hero-text mt-3">Skincare y cosmética pensados para acompañar tu rutina diaria con suavidad, confianza y un toque de lujo.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#tienda" class="btn btn-fidusia btn-lg">Comprar ahora <i class="bi bi-arrow-right ms-2"></i></a>
+              <a href="#rutinas" class="btn btn-outline-fidusia btn-lg">Descubrir mi rutina</a>
+            </div>
+            <div class="hero-stats mt-5">
+              <div><strong>+2.5K</strong><span>beauty lovers</span></div>
+              <div><strong>4.9/5</strong><span>valoración</span></div>
+              <div><strong>48 h</strong><span>despacho</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-visual position-relative">
+              <div class="gold-orbit"></div>
+              <img class="hero-image" src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1100&q=85" alt="Productos de skincare en tonos rosados" loading="eager">
+              <div class="floating-card floating-card-one">
+                <i class="bi bi-droplet-half"></i>
+                <div><strong>Glow Serum</strong><small>Hidratación intensa</small></div>
+              </div>
+              <div class="floating-card floating-card-two">
+                <i class="bi bi-gem"></i>
+                <div><strong>Fidusia Select</strong><small>Selección premium</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-bar py-4">
+      <div class="container">
+        <div class="row g-3 text-center text-md-start">
+          <div class="col-6 col-lg-3 benefit-item"><i class="bi bi-patch-check"></i><div><strong>Selección cuidada</strong><span>Skincare de calidad</span></div></div>
+          <div class="col-6 col-lg-3 benefit-item"><i class="bi bi-box-seam"></i><div><strong>Envíos seguros</strong><span>Empaque protegido</span></div></div>
+          <div class="col-6 col-lg-3 benefit-item"><i class="bi bi-arrow-repeat"></i><div><strong>Compra tranquila</strong><span>Soporte postventa</span></div></div>
+          <div class="col-6 col-lg-3 benefit-item"><i class="bi bi-chat-heart"></i><div><strong>Beauty care</strong><span>Atención cercana</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="section-pad">
+      <div class="container">
+        <div class="section-heading text-center mx-auto">
+          <span class="eyebrow">Compra por categoría</span>
+          <h2>Todo lo que tu rutina necesita</h2>
+          <p>Encuentra productos por paso, necesidad o momento del día.</p>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-6 col-lg-3"><button class="category-card w-100" data-category="Limpieza"><img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=700&q=80" alt="Limpieza facial"><span>Limpieza</span></button></div>
+          <div class="col-6 col-lg-3"><button class="category-card w-100" data-category="Sérums"><img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=700&q=80" alt="Sérum facial"><span>Sérums</span></button></div>
+          <div class="col-6 col-lg-3"><button class="category-card w-100" data-category="Hidratación"><img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=700&q=80" alt="Crema hidratante"><span>Hidratación</span></button></div>
+          <div class="col-6 col-lg-3"><button class="category-card w-100" data-category="Protección solar"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=80" alt="Protección solar"><span>Protección solar</span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tienda" class="section-pad shop-section">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-3 mb-4">
+          <div class="section-heading mb-0">
+            <span class="eyebrow">Fidusia favorites</span>
+            <h2 class="mb-1">Nuestra selección</h2>
+            <p class="mb-0">Fórmulas para limpiar, tratar, hidratar y proteger.</p>
+          </div>
+          <div class="shop-tools d-flex flex-wrap gap-2">
+            <div class="search-box"><i class="bi bi-search"></i><input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto"></div>
+            <select id="categoryFilter" class="form-select fidusia-select" aria-label="Filtrar categoría">
+              <option value="Todos">Todas las categorías</option>
+              <option value="Limpieza">Limpieza</option>
+              <option value="Sérums">Sérums</option>
+              <option value="Hidratación">Hidratación</option>
+              <option value="Protección solar">Protección solar</option>
+              <option value="Labios">Labios</option>
+            </select>
+            <select id="sortFilter" class="form-select fidusia-select" aria-label="Ordenar productos">
+              <option value="featured">Destacados</option>
+              <option value="priceAsc">Precio: menor a mayor</option>
+              <option value="priceDesc">Precio: mayor a menor</option>
+              <option value="rating">Mejor valorados</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-4" id="productGrid" aria-live="polite"></div>
+        <div id="emptyProducts" class="empty-state d-none">
+          <i class="bi bi-search-heart"></i>
+          <h3>No encontramos productos</h3>
+          <p>Prueba con otro nombre o categoría.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="rutinas" class="section-pad routine-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="routine-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&w=1000&q=85" alt="Rutina de cuidado facial" class="routine-photo">
+              <div class="routine-badge"><span>01</span><div><strong>Conoce tu piel</strong><small>Empieza por lo esencial</small></div></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <span class="eyebrow">Fidusia Routine</span>
+            <h2 class="display-6 mt-2">Una rutina simple puede cambiar cómo se siente tu piel.</h2>
+            <p class="mt-3 text-secondary">Selecciona tu necesidad principal y te sugerimos una rutina básica. Esta guía es cosmética y no reemplaza una valoración dermatológica.</p>
+            <div class="routine-selector mt-4">
+              <label for="skinConcern" class="form-label fw-semibold">¿Qué buscas mejorar?</label>
+              <select class="form-select form-select-lg" id="skinConcern">
+                <option value="hidratacion">Hidratación y confort</option>
+                <option value="luminosidad">Luminosidad</option>
+                <option value="grasa">Control de oleosidad</option>
+                <option value="sensibilidad">Rutina suave</option>
+              </select>
+              <button class="btn btn-fidusia mt-3" id="routineBtn">Crear mi rutina</button>
+            </div>
+            <div class="routine-result mt-4" id="routineResult"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad club-section">
+      <div class="container">
+        <div class="club-card p-4 p-lg-5">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <span class="eyebrow light">FIDUSIA CLUB</span>
+              <h2 class="text-white mt-2">Belleza con beneficios.</h2>
+              <p class="text-white-50 mb-0">Recibe lanzamientos, consejos, ofertas y acceso anticipado a colecciones.</p>
+            </div>
+            <div class="col-lg-5">
+              <form id="newsletterForm" class="newsletter-form">
+                <input class="form-control" type="email" id="newsletterEmail" placeholder="tu@email.com" required aria-label="Correo electrónico">
+                <button class="btn btn-light" type="submit">Unirme <i class="bi bi-arrow-right"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section-pad pt-0">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="about-panel h-100">
+              <span class="eyebrow">Sobre Fidusia</span>
+              <h2>Una tienda pensada para disfrutar el cuidado personal.</h2>
+              <p>Fidusia nace como una experiencia de compra enfocada en skincare y cosmética, con navegación clara, recomendaciones por rutina, favoritos, carrito y paneles internos para administrar catálogo, pedidos y stock.</p>
+              <div class="row g-3 mt-2">
+                <div class="col-sm-4"><div class="about-mini"><i class="bi bi-heart"></i><strong>Cuidado</strong><span>Experiencia amable</span></div></div>
+                <div class="col-sm-4"><div class="about-mini"><i class="bi bi-stars"></i><strong>Curaduría</strong><span>Catálogo seleccionado</span></div></div>
+                <div class="col-sm-4"><div class="about-mini"><i class="bi bi-headset"></i><strong>Soporte</strong><span>Antes y después</span></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="contact-panel h-100">
+              <h3>¿Necesitas ayuda?</h3>
+              <p>Escríbenos desde este formulario demo.</p>
+              <form id="contactForm" class="vstack gap-3">
+                <input class="form-control" type="text" placeholder="Nombre" required>
+                <input class="form-control" type="email" placeholder="Correo" required>
+                <textarea class="form-control" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                <button class="btn btn-fidusia" type="submit">Enviar mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rolePanelSection" class="section-pad admin-section d-none">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-3 align-items-md-end mb-4">
+          <div>
+            <span class="eyebrow">Panel interno</span>
+            <h2 id="rolePanelTitle">Panel</h2>
+            <p class="text-secondary mb-0" id="rolePanelSubtitle"></p>
+          </div>
+          <button class="btn btn-outline-fidusia" id="logoutBtn"><i class="bi bi-box-arrow-right me-2"></i>Cerrar sesión</button>
+        </div>
+        <div id="rolePanelContent"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <a class="brand-mark footer-brand" href="#inicio"><span class="brand-f">F</span><span>Fidusia</span></a>
+          <p class="mt-3 text-white-50">Skincare, cosmética y rutinas de cuidado en una experiencia femenina, elegante y simple.</p>
+        </div>
+        <div class="col-6 col-lg-2"><h6>Tienda</h6><a href="#tienda">Novedades</a><a href="#categorias">Categorías</a><a href="#rutinas">Rutinas</a></div>
+        <div class="col-6 col-lg-2"><h6>Ayuda</h6><a href="#nosotros">Contacto</a><a href="#">Envíos</a><a href="#">Cambios</a></div>
+        <div class="col-lg-4"><h6>Síguenos</h6><div class="socials"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a><a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a></div></div>
+      </div>
+      <hr class="footer-line my-4">
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 small text-white-50"><span>© 2026 Fidusia. Proyecto demostrativo.</span><span>Diseño responsive · HTML · CSS · Bootstrap · JSON · JavaScript</span></div>
+    </div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartCanvas" aria-labelledby="cartCanvasLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title" id="cartCanvasLabel"><i class="bi bi-bag-heart me-2"></i>Mi carrito</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItems" class="cart-items flex-grow-1"></div>
+      <div class="cart-summary border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between mb-2"><span>Subtotal</span><strong id="cartSubtotal">Bs. 0,00</strong></div>
+        <p class="small text-secondary">El costo de envío se calcula al finalizar.</p>
+        <button class="btn btn-fidusia w-100" id="checkoutBtn">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content fidusia-modal">
+        <div class="modal-header border-0 pb-0">
+          <div><span class="eyebrow">Bienvenida</span><h4 class="modal-title mt-1" id="loginModalLabel">Ingresa a Fidusia</h4></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body pt-3">
+          <form id="loginForm" class="vstack gap-3">
+            <div><label class="form-label">Correo</label><input class="form-control form-control-lg" type="email" id="loginEmail" required value="admin@fidusia.bo"></div>
+            <div><label class="form-label">Contraseña</label><input class="form-control form-control-lg" type="password" id="loginPassword" required value="Admin123!"></div>
+            <button class="btn btn-fidusia btn-lg" type="submit">Ingresar</button>
+          </form>
+          <div class="demo-credentials mt-4">
+            <strong>Accesos demo</strong>
+            <div class="small mt-2">Administrador: admin@fidusia.bo / Admin123!</div>
+            <div class="small">Ventas: ventas@fidusia.bo / Ventas123!</div>
+            <div class="small">Almacén: almacen@fidusia.bo / Stock123!</div>
+            <div class="small">Cliente: cliente@fidusia.bo / Cliente123!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content fidusia-modal" id="productModalContent"></div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content fidusia-modal">
+        <div class="modal-header border-0"><h4 class="modal-title" id="checkoutModalLabel">Finalizar compra</h4><button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button></div>
+        <div class="modal-body">
+          <form id="checkoutForm" class="row g-3">
+            <div class="col-md-6"><label class="form-label">Nombre completo</label><input class="form-control" required></div>
+            <div class="col-md-6"><label class="form-label">Teléfono</label><input class="form-control" required></div>
+            <div class="col-12"><label class="form-label">Dirección</label><input class="form-control" required></div>
+            <div class="col-md-6"><label class="form-label">Ciudad</label><select class="form-select" required><option>La Paz</option><option>Cochabamba</option><option>Santa Cruz</option><option>Sucre</option><option>Otra</option></select></div>
+            <div class="col-md-6"><label class="form-label">Método de pago</label><select class="form-select" required><option>QR / transferencia</option><option>Tarjeta (demo)</option><option>Pago contra entrega</option></select></div>
+            <div class="col-12"><label class="form-label">Nota del pedido</label><textarea class="form-control" rows="3" placeholder="Opcional"></textarea></div>
+            <div class="col-12"><div class="checkout-total d-flex justify-content-between"><span>Total del pedido</span><strong id="checkoutTotal">Bs. 0,00</strong></div></div>
+            <div class="col-12"><button class="btn btn-fidusia btn-lg w-100" type="submit">Confirmar pedido demo</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast fidusia-toast" role="status" aria-live="polite" aria-atomic="true">
+      <div class="toast-body d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill"></i><span id="toastMessage">Acción completada</span></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
